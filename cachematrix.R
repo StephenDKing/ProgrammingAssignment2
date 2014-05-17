@@ -3,8 +3,10 @@
 
 ## Function the gets and sets the matrix and its inverse, hold it in cache
 makeCacheMatrix <- function(x = matrix()) {
+  ## make cache null 
   cache <- NULL
   
+  ## not needed unless updating cache with a x$set(varMatrix)
   set <- function(y) {
     x <<- y
     cache <<- NULL
@@ -13,7 +15,7 @@ makeCacheMatrix <- function(x = matrix()) {
   setInverse <- function(inverse) cache <<- inverse
   getInverse <- function() cache
   
-  #additional methods
+  # additional methods
   list(set = set, get = get,
        setInverse = setInverse,
        getInverse = getInverse)
