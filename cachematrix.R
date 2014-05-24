@@ -1,7 +1,7 @@
 ## makeCacheMatrix: Creates a Cache of a Matrix
 ## cacheSolve: uses the created cache or builds the cache then returns it
 
-## Function the gets and sets the matrix and its inverse, hold it in cache
+## Function that gets and sets the matrix and its inverse, holds it in cache
 makeCacheMatrix <- function(x = matrix()) {
   ## make cache null 
   cache <- NULL
